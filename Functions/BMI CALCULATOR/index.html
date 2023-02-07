@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BMI Calculator </title>
+    <style>
+        .container{
+            padding-top: 0.1px;
+            margin-top: 20%;
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="divOne">
+            <form id="formsubmit">
+                <label for=""> Weight : </label>
+                <input type="number" class="weight">
+                <br><br>
+                <label for="">Height : </label>
+                <input type="text" class="height">
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="divTwo">
+            <h3 class="sendAns"> ... </h3>
+        </div>
+    </div>
+    <script>
+        // function getTheAns(){
+        //     document.querySelector('.sendAns').textContent = "sjdakjd";
+        // }
+    </script>
+    <script src="./bmiCalculator.js"></script>
+</body>
+</html>
