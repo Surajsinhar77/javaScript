@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicee Game</title>
+
+    <style>
+
+        body{
+            display: flex;
+            height: 100%;
+        }
+
+        .container{
+            align-items: center;
+        }
+        .dicees{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mainHeader{
+            margin: 0 auto;
+        }
+        .mainHeader h1{
+            text-align: center;
+        }
+
+        .col{
+            align-items: center;
+        }
+
+        .dicee{
+            display: flex;
+        }
+
+        .dicee img{
+            width: 50%;
+            /* width: 300px; */
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .subhead{
+            display: flex;
+        }
+
+        .subhead h2{
+            margin: 0 auto;
+        }
+
+        .playBtn{
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            width: 60px;
+            height: 30px;
+            padding: 7px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="mainHeader"><h1>Refresh Me</h1></header>
+        <div class="dicees">
+            <!-- dice one represent as col -->
+            <div class="col">
+                <div class="subhead">
+                    <h2>Player 1</h2>
+                </div>
+                <div class="dicee">
+                    <img class="dice1" src="img/1.jpeg" alt="dices_image">
+                </div>
+            </div>
+            <!-- col end here -->
+
+            <div class="col">
+                <div class="subhead">
+                    <h2>Player 2</h2>
+                </div>
+                <div class="dicee">
+                    <img class="dice2" src="img/2.jpeg" alt="dices_image">
+                </div>
+            </div>
+            <!-- 2nd div end here -->
+
+        </div>
+        <button id="btn" class="playBtn">PLaY</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
